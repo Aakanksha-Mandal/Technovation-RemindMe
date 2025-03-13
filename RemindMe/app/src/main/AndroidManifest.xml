@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.remindme">
+    <uses-permission android:name="android.permission.CAMERA"> </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Remind Me"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DropDownTest" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetRemindersPage"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ServiceProviderPage" />
+        <activity android:name=".RemindersPage" />
+        <activity android:name=".PersonalRemindersPage" />
+        <activity android:name=".MembershipRenewalPage" />
+        <activity android:name=".MedicalPage" />
+        <activity android:name=".InsuranceRenewalPage" />
+        <activity android:name=".HomePage" />
+        <activity
+            android:name=".EmergencyContactNumbersPage"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".BillPaymentsPage" />
+        <activity
+            android:name=".CreateYourProfilePage"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".AlarmReceiver" />
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <activity android:name=".MyReminders"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyContactNumbersPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Emergencyimg"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/background_light"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                app:srcCompat="@drawable/emergency" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Nametxt"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:hint="NAME"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/voicesearch1"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/vsearch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/PhoneNumbertxt"
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:hint="PHONE NUMBER"
+                    android:inputType="phone"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/voicesearch2"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/vsearch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Savebtn2"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/appRed"
+                    android:text="SAVE"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Callbtn2"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/appRed"
+                    android:text="CALL"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Nametxt2"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:hint="NAME"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/voicesearch3"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/vsearch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/PhoneNumbertxt2"
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:hint="PHONE NUMBER"
+                    android:inputType="phone"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/voicesearch4"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/vsearch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/savebtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/appRed"
+                    android:text="SAVE"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/callbtn"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/appRed"
+                    android:text="CALL"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/GoBackbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/appRed"
+                android:text="GO BACK"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
